@@ -2,6 +2,7 @@ $main: rgba(22,160,133,0.8);//#16a085;
 $main-darker: rgba(16,115,96, 0.8); //rgb(16,115,96) //#107360
 $compCol1: #a01631;
 $comptCol2: #1676a0;
+$compColDark: #731023;
 
 $lead-image-source: url(./assets/lead-page.jpg);
 
@@ -27,7 +28,16 @@ $lead-image-source: url(./assets/lead-page.jpg);
     z-index: 1;
 }
 
-#side-nav{
+#side-nav-closed{
+    position: relative;
+    padding-left: 1%;
+    //padding-top: 1%;
+    z-index: 10;
+    width: 20%;
+    display: none;
+}
+
+#side-nav-open{
     position: relative;
     padding-left: 1%;
     padding-top: 1%;
@@ -35,16 +45,24 @@ $lead-image-source: url(./assets/lead-page.jpg);
     width: 20%;
     height: 100%;
     //border: 2px red solid;
-    color: $compCol1;
+    color: $compColDark;
     background-color: $main-darker;
-    //visibility: hidden;
+    //display: none;
+}
+
+#sidenavOButton{
+    position: relative;
+    font-size:50px;
+    cursor:pointer;
+    font-style: bold;
+    color: #2D383A;  
 }
 
 #closebtncontainer{
     width: 100%;
 }
 
-#sidenavButton{
+#sidenavXButton{
     //display: inline-block;
     position: relative;
     left: 80%;
