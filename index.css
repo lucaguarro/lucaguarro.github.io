@@ -8,6 +8,43 @@
   overflow: hidden;
 }
 
+#lead-content {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: red solid 2px;
+}
+
+#lead-content h1 {
+  color: #a01631;
+  font-weight: 900;
+  font-size: 5em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 0.5em;
+}
+
+#lead-content h2 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 2.25em;
+  margin-bottom: 15px;
+}
+
+.btn-rounded-white {
+  display: inline-block;
+  color: #fff;
+  padding: 15px 25px;
+  border: 3px solid #fff;
+  border-radius: 30px;
+  -webkit-transition: .5s ease all;
+  transition: .5s ease all;
+}
+
 #lead-overlay {
   background: rgba(22, 160, 133, 0.8);
   position: absolute;
@@ -41,7 +78,7 @@
 
 #sidenavOButton {
   position: relative;
-  font-size: 50px;
+  font-size: 3em;
   cursor: pointer;
   font-style: bold;
   color: #2D383A;
@@ -54,7 +91,7 @@
 #sidenavXButton {
   position: relative;
   left: 80%;
-  font-size: 70px;
+  font-size: 4em;
   cursor: pointer;
   font-style: bold;
   color: #2D383A;
@@ -73,10 +110,14 @@
   border: 2px red solid;
 }
 
+ul {
+  padding-top: 70px;
+}
+
 ul li {
   list-style: none;
-  padding: 15px;
-  font-size: 50px;
+  padding: 0.6em;
+  font-size: 3em;
   cursor: pointer;
 }
 
