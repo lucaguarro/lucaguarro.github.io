@@ -19,12 +19,11 @@ $lead-image-source: url(./assets/lead-page.jpg);
 #lead-content {
     position: absolute;
     z-index: 10;
-    top: 50%;
+    top: 45%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-    border: red solid 2px;
 }
 
 #lead-content h1 {
@@ -51,6 +50,13 @@ $lead-image-source: url(./assets/lead-page.jpg);
     border-radius: 30px;
     -webkit-transition: .5s ease all;
     transition: .5s ease all;
+}
+
+#lead-down{
+    width: 100%;
+    height: 5%;
+    border: red solid 9px;
+    z-index: 15;
 }
 
 #lead-overlay{
@@ -107,19 +113,6 @@ $lead-image-source: url(./assets/lead-page.jpg);
     cursor:pointer;
     font-style: bold;
     color: #2D383A;
-}
-
-#lead-down {
-    padding-bottom: 1%;
-    padding-top: 1%;
-    position: relative;
-    width: 100%;
-    height: 10%;
-    text-align: center;
-    z-index: 100;
-    bottom: 15px;
-    color: #fff;
-    border: 2px red solid;
 }
 
 ul{
