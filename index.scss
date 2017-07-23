@@ -1,11 +1,9 @@
-$kobe: #2c3e50;
-$bryant: #16a085;
-$lead-image-source: url(./assets/lead-page.jpg);
+$main: rgba(22,160,133,0.8);//#16a085;
+$main-darker: rgba(16,115,96, 0.8); //rgb(16,115,96) //#107360
+$compCol1: #a01631;
+$comptCol2: #1676a0;
 
-h1{
-   color: $kobe;
-   background-color: $bryant;
-}
+$lead-image-source: url(./assets/lead-page.jpg);
 
 #lead{
     background: $lead-image-source;
@@ -14,12 +12,11 @@ h1{
     min-height: 500px;
     max-height: 1080px;
     background-size: cover;
-    padding: 15px;
     overflow: hidden;
 }
 
 #lead-overlay{
-    background: rgba(22,160,133,0.8);
+    background: $main;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -29,3 +26,59 @@ h1{
     left: 0;
     z-index: 1;
 }
+
+#side-nav{
+    position: relative;
+    padding-left: 1%;
+    padding-top: 1%;
+    z-index: 10;
+    width: 20%;
+    height: 100%;
+    //border: 2px red solid;
+    color: $compCol1;
+    background-color: $main-darker;
+    //visibility: hidden;
+}
+
+#closebtncontainer{
+    width: 100%;
+}
+
+#sidenavButton{
+    //display: inline-block;
+    position: relative;
+    left: 80%;
+    font-size:70px;
+    cursor:pointer;
+    font-style: bold;
+    color: #2D383A;
+}
+
+#lead-down {
+    padding-bottom: 1%;
+    padding-top: 1%;
+    position: relative;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    z-index: 100;
+    bottom: 15px;
+    color: #fff;
+    border: 2px red solid;
+}
+
+ul li{
+    list-style: none;
+    padding: 15px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+li:hover{
+    background: $main;
+}
+
+ul li:nth-child(2n+1) {  
+  color: #ccc;
+}
+
