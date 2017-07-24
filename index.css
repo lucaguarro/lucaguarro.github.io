@@ -18,6 +18,13 @@
   text-align: center;
 }
 
+#lead-down {
+  position: absolute;
+  z-index: 10;
+  bottom: 2%;
+  text-align: center;
+}
+
 #lead-content h1 {
   color: #a01631;
   font-weight: 900;
@@ -47,8 +54,19 @@
 #lead-down {
   width: 100%;
   height: 5%;
-  border: red solid 9px;
+  font-size: 20px;
   z-index: 15;
+}
+
+#lead-down span {
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 3px solid #a0cfee;
+  text-align: center;
 }
 
 #lead-overlay {
@@ -109,8 +127,8 @@ ul {
 
 ul li {
   list-style: none;
-  padding: 0.6em;
-  font-size: 3em;
+  padding: 0.3em;
+  font-size: 2.5em;
   cursor: pointer;
 }
 
