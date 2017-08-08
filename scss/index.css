@@ -1,5 +1,5 @@
 #lead {
-  background: url(./assets/lead-page.jpg);
+  background: url(../assets/lead-page.jpg);
   position: relative;
   height: 100vh;
   min-height: 500px;
@@ -102,7 +102,7 @@
 
 #sidenavOButton {
   position: relative;
-  font-size: 3vw;
+  font-size: 40px;
   cursor: pointer;
   font-style: bold;
   color: #2D383A;
@@ -115,7 +115,7 @@
 #sidenavXButton {
   position: relative;
   left: 80%;
-  font-size: 2.8vw;
+  font-size: 25px;
   cursor: pointer;
   font-style: bold;
   color: #2D383A;
@@ -127,7 +127,8 @@ ul {
 
 ul li {
   list-style: none;
-  padding: 0.3em;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
   font-size: 2.6vw;
   cursor: pointer;
 }
