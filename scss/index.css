@@ -1,3 +1,7 @@
+.background-alt {
+  background: #f2f2f5;
+}
+
 #lead {
   background: url(../assets/lead-page.jpg);
   position: relative;
