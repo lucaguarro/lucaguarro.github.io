@@ -43,15 +43,6 @@
     }*/
 }
 @media only screen and (max-width: 768px){
-    header{
-        position:fixed;
-        display:none;
-        z-index:999;
-        -webkit-animation:none;
-        animation:none;
-        bottom:0;
-        height:100%;
-    }
     #mobile-menu-open,#mobile-menu-close{
         display:block;
     }
