@@ -114,7 +114,7 @@ $lead-image-source: url(./assets/lead-page.jpg);
 
 #sidenavOButton{
     position: relative;
-    font-size: 3em;
+    font-size: 3vw;
     cursor:pointer;
     font-style: bold;
     color: #2D383A;  
@@ -128,7 +128,7 @@ $lead-image-source: url(./assets/lead-page.jpg);
     //display: inline-block;
     position: relative;
     left: 80%;
-    font-size:4em;
+    font-size:2.8vw;
     cursor:pointer;
     font-style: bold;
     color: #2D383A;
@@ -141,7 +141,7 @@ ul{
 ul li{
     list-style: none;
     padding: 0.3em;
-    font-size: 2.5em;
+    font-size: 2.6vw;
     cursor: pointer;
 }
 
