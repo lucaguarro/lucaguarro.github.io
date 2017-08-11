@@ -55,6 +55,7 @@
 
         $this = $(this); // Store reference to this
         $userContent = $this.children('div'); // user content
+        console.log("oh yeah", $userContent)
 
         // Create each timeline block
         $userContent.each(function() {
