@@ -13,7 +13,7 @@ $border: #dcd9d9;
 $heading: #374054;
 $text: #74808a;
 
-$lead-image-source: url(../assets/lead-page.jpg);
+$lead-image-source: url(../../images/lead-page.jpg);
 
 @mixin transition($duration: 0.5s, $func: ease, $property: all) {
     transition: #{$duration} #{$func} #{$property};
