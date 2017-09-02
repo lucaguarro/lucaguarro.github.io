@@ -1,195 +1,58 @@
+/*!
+    Title: Dev Portfolio Template
+    Version: 1.0.0
+    Last Change: 08/31/2017
+    Author: Luca Guarro
+    Description: This file contains all the styles associated with the page
+    that don't come from third party libraries. This file gets compiled using
+    Gulp and send to the /css folder which is then loaded on the page.
+*/
+/*
+    File Contents:
+
+        1. Variables
+        2. Mixins
+        3. Global Styles
+        4. Lead Styles
+        5. About Styles
+        6. Experience Styles
+        7. Education Styles
+        8. Project Styles
+        9. Skills Styles
+        10. Contact Styles
+        11. Optional Section Styles
+        12. Media Queries
+*/
+
+/*
+    ------------------------
+    ----- 1. Variables -----
+    ------------------------
+*/
+//Colors
 $main: rgba(22,160,133,0.8);//#16a085;
-$main-darker: rgba(16,115,96, 0.8); //rgb(16,115,96) //#107360
-$compCol1: #a01631;
+$main-dark: rgba(16,115,96, 0.8); //rgb(16,115,96) //#107360
+$secondary: #a01631;
 $comptCol2: #1676a0;
-$compColDark: #731023;
+$secondary-dark: #731023;
 $background: #fff;
 $background-alt: #f2f2f5;
 $base-color: #3498db;
 $base-color-hover: darken($base-color, 10%);
 $border: #dcd9d9;
-
-// Define text colors
 $heading: #374054;
 $text: #74808a;
 
+//Images
 $lead-image-source: url(../../images/lead-page.jpg);
+/*
+    ---------------------
+    ----- 2. Mixins -----
+    ---------------------
+*/
 
 @mixin transition($duration: 0.5s, $func: ease, $property: all) {
     transition: #{$duration} #{$func} #{$property};
-}
-
-@mixin placeholder {
-    &::-webkit-input-placeholder {
-        @content;
-    }
-
-    &:-moz-placeholder {
-        @content;
-        opacity: 1;
-    }
-
-    &::-moz-placeholder {
-        @content;
-        opacity: 1;
-    }
-
-    &:-ms-input-placeholder {
-        @content;
-    }
-}
-
-
-.background-alt {
-    background: $background-alt;
-}
-
-#lead{
-    background: $lead-image-source;
-    position: relative;
-    height: 100vh;
-    min-height: 500px;
-    max-height: 1080px;
-    background-size: cover;
-    overflow: hidden;
-}
-
-#lead-content {
-    position: absolute;
-    z-index: 10;
-    top: 45%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-#lead-down {
-    position: absolute;
-    z-index:10;
-    bottom: 2%;
-    text-align: center;
-}
-
-
-#lead-content h1 {
-    color: #a01631;
-    font-weight: 900;
-    font-size: 5vw;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    line-height: 0.5em;
-}
-
-#lead-content h2 {
-    color: #fff;
-    font-weight: 500;
-    font-size: 2.25vw;
-    margin-bottom: 15px;
-}
-
-.btn-rounded-white {
-    display: inline-block;
-    color: #fff;
-    padding: 15px 25px;
-    border: 3px solid #fff;
-    border-radius: 30px;
-    -webkit-transition: .5s ease all;
-    transition: .5s ease all;
-}
-
-#lead-down{
-    width: 100%;
-    height: 5%;
-    font-size: 20px;
-    z-index: 15;
-}
-
-#lead-down span {
-    cursor: pointer;
-    display: block;
-    margin: 0 auto;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    border: 3px solid #a0cfee;
-    text-align: center;
-}
-
-#lead-overlay{
-    background: $main;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-}
-
-#side-nav-closed{
-    position: relative;
-    padding-left: 1%;
-    //padding-top: 1%;
-    z-index: 10;
-    width: 20%;
-    display: none;
-}
-
-#side-nav-open{
-    position: relative;
-    padding-left: 1%;
-    padding-top: 1%;
-    z-index: 10;
-    width: 20%;
-    height: 100%;
-    //border: 2px red solid;
-    color: $compColDark;
-    background-color: $main-darker;
-    //display: none;
-}
-
-#sidenavOButton{
-    position: relative;
-    font-size: 40px;
-    cursor:pointer;
-    font-style: bold;
-    color: #2D383A;  
-}
-
-#closebtncontainer{
-    width: 100%;
-}
-
-#sidenavXButton{
-    //display: inline-block;
-    position: relative;
-    left: 80%;
-    font-size:40px;
-    cursor:pointer;
-    font-style: bold;
-    color: #2D383A;
-}
-
-ul{
-    padding-top: 70px;
-}
-
-#menu-list li{
-    list-style: none;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-    font-size: 2.6vw;
-    cursor: pointer;
-}
-
-#menu-list li:hover{
-    background: $main;
-}
-
-#menu-list li:nth-child(2n+1) {  
-    color: #ccc;
 }
 
 /*
@@ -197,7 +60,6 @@ ul{
     ----- 3. Global Styles -----
     ----------------------------
 */
-
 body {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -208,42 +70,7 @@ body {
     }
 }
 
-// No JS styles
-.no-js {
-    #experience-timeline {
-        > div {
-            background: $background;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid $border;
 
-            h3 {
-                font-size: 1.5em;
-                font-weight: 300;
-                color: $heading;
-                display: inline-block;
-                margin: 0;
-            }
-
-            h4 {
-                font-size: 1.2em;
-                font-weight: 300;
-                color: #7e8890;
-                margin: 0 0 15px 0;
-            }
-
-            p {
-                color: $text;
-                font-size: 0.9em;
-                margin: 0;
-            }
-        }
-
-        &:before, &:after {
-            content: none;
-        }
-    }
-}
 
 @keyframes dropHeader {
   0% {
@@ -314,113 +141,6 @@ header {
     }
 }
 
-#mobile-menu-open {
-    display: none;
-    cursor: pointer;
-    position: fixed;
-    right: 15px;
-    top: 10px;
-    color: $base-color;
-    font-size: 1.5em;
-    z-index: 20;
-    padding: 0 7px;
-    border-radius: 4px;
-    background: $background;
-}
-
-#mobile-menu-close {
-    display: none;
-    text-align: right;
-    width: 100%;
-    background: $background;
-    font-size: 1.5em;
-    padding-right: 15px;
-    padding-top: 10px;
-    cursor: pointer;
-    color: $base-color;
-
-    span {
-        font-size: 0.5em;
-        text-transform: uppercase;
-    }
-
-    i {
-        vertical-align: middle;
-    }
-}
-
-footer {
-    padding: 50px 0;
-}
-
-.copyright {
-    padding-top: 20px;
-
-    p {
-        margin: 0;
-        color: $text;
-    }
-}
-
-.top {
-    text-align: center;
-
-    span {
-        cursor: pointer;
-        display: block;
-        margin: 15px auto 0 auto;
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-        border: 3px solid lighten($text, 25%);
-        text-align:center;
-    }
-
-    i {
-        color: $text;
-    }
-}
-
-.social {
-    text-align: right;
-
-    ul {
-        margin: 5px 0 0 0;
-        padding: 0;
-    }
-
-    li {
-        display: inline-block;
-        font-size: 1.25em;
-        list-style: none;
-    }
-
-    a {
-        display: block;
-        color: $text;
-        padding: 10px;
-
-        &:hover {
-            color: $base-color;
-        }
-    }
-}
-
-.btn-rounded-white {
-    display: inline-block;
-    color: #fff;
-    padding: 15px 25px;
-    border: 3px solid #fff;
-    border-radius: 30px;
-    @include transition();
-
-    &:hover {
-        color: $base-color;
-        background: #fff;
-        text-decoration: none;
-    }
-}
-
 .shadow {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
@@ -453,6 +173,158 @@ footer {
 .background-alt {
     background: $background-alt;
 }
+
+.btn-rounded-white {
+    display: inline-block;
+    color: #fff;
+    padding: 15px 25px;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    @include transition();
+}
+
+/*
+    --------------------------
+    ----- 4. Lead Styles -----
+    --------------------------
+*/
+
+#lead{
+    background: $lead-image-source;
+    position: relative;
+    height: 100vh;
+    min-height: 500px;
+    max-height: 1080px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#lead-content {
+    position: absolute;
+    z-index: 10;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    h1 {
+        color: #a01631;
+        font-weight: 900;
+        font-size: 5vw;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        line-height: 0.5em
+    }
+
+    h2 {
+        color: #fff;
+        font-weight: 500;
+        font-size: 2.25vw;
+        margin-bottom: 15px;       
+    }
+}
+
+#lead-down {
+    position: absolute;
+    z-index:10;
+    bottom: 2%;
+    text-align: center;
+    width: 100%;
+    height: 5%;
+    font-size: 20px;
+
+    span{
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        border: 3px solid #a0cfee;
+        text-align: center;
+    }
+}
+
+#lead-overlay{
+    background: $main;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#side-nav-closed{
+    position: relative;
+    padding-left: 1%;
+    z-index: 10;
+    width: 20%;
+    display: none;
+
+    #sidenavOButton{
+        position: relative;
+        font-size: 40px;
+        cursor:pointer;
+        font-style: bold;
+        color: #2D383A;  
+    }
+}
+
+#side-nav-open{
+    position: relative;
+    padding-left: 1%;
+    padding-top: 1%;
+    z-index: 10;
+    width: 20%;
+    height: 100%;
+    color: $secondary-dark;
+    background-color: $main-dark;
+
+    #closebtncontainer{
+        width: 100%;
+        
+        #sidenavXButton{
+            position: relative;
+            left: 80%;
+            font-size:40px;
+            cursor:pointer;
+            font-style: bold;
+            color: #2D383A;
+        }
+    }
+}
+
+ul{
+    padding-top: 70px;
+}
+
+#menu-list li{
+    list-style: none;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    font-size: 2.6vw;
+    cursor: pointer;
+}
+
+#menu-list li:hover{
+    background: $main;
+}
+
+#menu-list li:nth-child(2n+1) {  
+    color: #ccc;
+}
+
+/*
+    ----------------------------
+    ----- 3. Global Styles -----
+    ----------------------------
+*/
+
+
 
 /*
     ---------------------------
