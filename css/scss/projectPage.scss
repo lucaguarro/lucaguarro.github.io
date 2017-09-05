@@ -1,0 +1,11 @@
+/*
+    -------------------------------
+    ----- 8. Project Page Styles -----
+    -------------------------------
+*/
+$main: rgba(22,160,133,0.8);//#16a085
+
+.navbar-custom{
+    background-color: $main;
+    border: 2px solid red;
+}
