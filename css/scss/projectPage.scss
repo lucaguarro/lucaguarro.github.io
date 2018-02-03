@@ -4,8 +4,25 @@
     -------------------------------
 */
 $main: rgba(22,160,133,0.8);//#16a085
+$main-light: rgba(165, 243, 227, 0.5);//#8ff0dc #a5f3e3
+$secondary: #a01631;
 
 .navbar-custom{
     background-color: $main;
-    border: 2px solid red;
+    //border: 2px solid red;
+}
+
+.content-container{
+    width: 100%;
+
+    //border: 2px solid red;
+    background-color: $main-light;
+    margin-left:100px
+}
+
+.no-vert-margin{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }

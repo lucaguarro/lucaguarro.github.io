@@ -7,3 +7,30 @@ function closeNav() {
     document.getElementById("side-nav-closed").style.display = "block";
     document.getElementById("side-nav-open").style.display = "none";
 }
+
+// $(".project").hover(
+// function(){
+//   $(this).filter(':not(:animated)').animate({
+//      marginLeft:'9px'
+//   },'slow');
+// // This only fires if the row is not undergoing an animation when you mouseover it
+// },
+// function() {
+//   $(this).animate({
+//      marginLeft:'0px'
+//   },'slow');
+// });
+
+// $(function(){
+//     $('.project').hover(
+//         function(){
+//         $(this).filter(':not(:animated)').animate({
+//         },'fast');
+//         // This only fires if the row is not undergoing an animation when you mouseover it
+//         },
+//         function() {
+//         $(this).animate({
+
+//         },'fast');
+//         });
+// });

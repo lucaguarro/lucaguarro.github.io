@@ -5,7 +5,19 @@
 */
 .navbar-custom {
   background-color: rgba(22, 160, 133, 0.8);
-  border: 2px solid red;
+}
+
+.content-container {
+  width: 100%;
+  background-color: rgba(165, 243, 227, 0.5);
+  margin-left: 100px;
+}
+
+.no-vert-margin {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
  
 
