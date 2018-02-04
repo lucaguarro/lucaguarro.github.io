@@ -74,17 +74,12 @@
     #sidenavXButton{
         font-size: 40px;
     }
-    ul li{
-        font-size: 30px;
-    }
+
     #side-nav-closed{
         display:block;
     }
     .education-block h3,.education-block span{
         float:none;
-    }
-    .project-image{
-        display:none;
     }
     .project-info{
         position:relative;
