@@ -12,6 +12,14 @@ $secondary: #a01631;
     //border: 2px solid red;
 }
 
+.round-me{
+    border-radius: 15px;
+}
+
+.pad-me {
+    margin-top: 8px;
+}
+
 .content-container{
     width: 100%;
 
@@ -25,4 +33,13 @@ $secondary: #a01631;
     padding-bottom: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+.gif{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: block; /*for the img inside your div */  
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 80px;
 }
