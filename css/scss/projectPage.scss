@@ -22,10 +22,9 @@ $secondary: #a01631;
 
 .content-container{
     width: 100%;
-
     //border: 2px solid red;
     background-color: $main-light;
-    margin-left:100px
+    margin-left:100px;
 }
 
 .no-vert-margin{
@@ -42,4 +41,7 @@ $secondary: #a01631;
     margin-left: auto;
     margin-right: auto;
     border-radius: 80px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
 }

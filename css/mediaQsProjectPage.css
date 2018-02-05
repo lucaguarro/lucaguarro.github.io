@@ -1,0 +1,36 @@
+@media only screen and (max-width: 992px){
+    .navbar-header{
+        display: none;
+    }
+    .content-container{
+        margin-left: 0px;
+    }
+    .no-marg{
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    /*#lead{
+        height:auto;
+        min-height:auto;
+        max-height:auto;
+    }
+    #lead-content{
+        position:relative;
+        -webkit-transform:none;
+        transform:none;
+        left:auto;
+        top:auto
+    }
+    #lead-content h1{
+        font-size:3em
+    }
+    #lead-content h2{
+        font-size:1.75em
+    }
+    #about{
+        text-align:center
+    }
+    #about p{
+        text-align:left;
+    }*/
+}

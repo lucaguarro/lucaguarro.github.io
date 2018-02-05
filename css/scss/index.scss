@@ -653,3 +653,42 @@ header {
         font-size: 1.2em;
     }
 }
+
+/*
+    -------------------------------
+    ----- 10. Contact Styles -----
+    -------------------------------
+*/
+#contact{
+    text-align: center;
+    h2 {
+        color: $heading;
+        margin-bottom: 50px;
+    }
+}
+
+.contact .fa:before {
+  display: inline-block;
+  opacity: 0.7;
+}
+
+.contact li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 1em;
+  text-align: center;
+}
+
+.contact p {
+  text-align: center;
+}
+
+.contact {
+  display: inline-block;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+.cont {
+  text-align: center;
+}
