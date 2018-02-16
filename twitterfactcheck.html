@@ -7,42 +7,42 @@
     <link rel="stylesheet" href="./assets/bootstrap.min.css">
     <link rel = "stylesheet" type = "text/css" href = "./css/mediaQsProjectPage.css" />
     <link rel = "stylesheet" type = "text/css" href = "./css/scss/projectPage.css" />
+    <!--<link rel = "stylesheet" type = "text/css" href = "./assets/font-awesome-4.7.0/css/font-awesome.min.css" />-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand no-vert-margin" href="./index.html">
-                <img class="round-me" style="max-width: 100px; max-height:100px" alt="Brand" src="./images/smplelogo.png">
-            </a>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 offset-sm-1 round-me">
+                <img class="round-me" style="max-width: 100%; max-height:100%" src="images/factCheckProject/tfcSm.png" />
+            </div>
+            <div class="col-sm-8">
+                <h3 class="pad-me">Twitter Fact Check</h3>
+                <dl class="dl-horizontal">
+                    <dt class="removeXs">Description</dt>
+                    <dd class="removeXs">Twitter Fact Check is a chrome extension that detects political tweets and uses the tweets themselves 
+                                as search queries to the Guardian to display a list of links to related articles directly inside of the tweet.</dd>
+                    <dt>Tools used</dt>
+                    <dd>JavaScript, HTML, CSS, Guardian API, Chrome API </dd>
+                    <dt class="removeXs">Link:</dt>
+                    <dd class="removeXs"><a href="https://chrome.google.com/webstore/detail/twitter-fact-check/knkgedhglgpdamdklbgoknjhmappdaoo" alt="Twitter Fact Check" target="_blank">Twitter Fact Check</a></dd>
+                    <dt class="removeXs">Source Code:</dt>
+                    <dd class="removeXs"><a href="https://github.com/lucaguarro/DebugPolitics" alt="github link" target="_blank">github</a></dd>
+                </dl>
+            </div>
         </div>
-        <div class="content-container round-me">
-            <div class="row">
-                <div class="col-sm-4 round-me">
-                    <img class="round-me" style="max-width: 100%; max-height:100%" src="images/factCheckProject/tfcSm.png" />
-                </div>
-                <div class="col-sm-8">
-                    <h3 class="pad-me">Twitter Fact Check</h3>
-                    <dl class="dl-horizontal">
-                        <dt class="removeXs">Description</dt>
-                        <dd class="removeXs">Twitter Fact Check is a chrome extension that detects political tweets and uses the tweets themselves 
-                                    as search queries to the Guardian to display a list of links to related articles directly inside of the tweet.</dd>
-                        <dt>Tools used</dt>
-                        <dd>JavaScript, HTML, CSS, Guardian API, Chrome API </dd>
-                        <dt class="removeXs">Link:</dt>
-                        <dd class="removeXs"><a href="https://chrome.google.com/webstore/detail/twitter-fact-check/knkgedhglgpdamdklbgoknjhmappdaoo" alt="Twitter Fact Check" target="_blank">Twitter Fact Check</a></dd>
-                        <dt class="removeXs">Source Code:</dt>
-                        <dd class="removeXs"><a href="https://github.com/lucaguarro/DebugPolitics" alt="github link" target="_blank">github</a></dd>
-                    </dl>
-                </div>
-            </div>
-            <div class="row" >
-                <img class="gif" src="images/peekProject/peekPreview2.gif">
-            </div>
+        <div class="row video-container">
+            <video controls>
+                <source src="images/factCheckProject/factCheckPreview.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
     </div>
-    </nav>
+    <!--<div class="gobackbutton">
+        <p><i class="fas fa-long-arrow-alt-left fa-3x"></i></p>
+        <p>Go Back</p>
+    </div>-->
 </body>
 </html>
 
