@@ -7,56 +7,62 @@
     <link rel="stylesheet" href="./assets/bootstrap.min.css">
     <link rel = "stylesheet" type = "text/css" href = "./css/mediaQsProjectPage.css" />
     <link rel = "stylesheet" type = "text/css" href = "./css/scss/projectPage.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./js/gif.js"></script>
+    <!--<link rel = "stylesheet" type = "text/css" href = "./assets/font-awesome-4.7.0/css/font-awesome.min.css" />-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand no-vert-margin" href="./index.html">
-                <img class="round-me" style="max-width: 100px; max-height:100px" alt="Brand" src="./images/smplelogo.png">
-            </a>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 offset-sm-1 round-me">
+                <img class="round-me" style="max-width: 100%; max-height:100%" src="images/peekProject/icon.png" />
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h3 class="pad-me">Peek</h3>
+                    </div>
+                    <div class="go-back-button col-sm-3">
+                        <a href="./index.html">
+                            <p style="font-size:20px; line-height:90%; color:#1D2951"><i class="fas fa-long-arrow-alt-left fa-2x"></i> Home</p>
+                        </a>
+                    </div>
+                </div>
+                <dl class="dl-horizontal">
+                    <dt class="removeXs">Description</dt>
+                    <dd class="removeXs">Peek is a chrome extension that allows the user to preview all the tabs of the current 
+                        window in three different nicely formatted views making it both quicker and more 
+                        convenient to navigate tabs.</dd>
+                    <dt>Tools used</dt>
+                    <dd>JavaScript, Chrome Tabs API, HTML, CSS</dd>
+                    <dt class="removeXs">Link</dt>
+                    <dd class="removeXs"><a href="https://chrome.google.com/webstore/detail/peek/icebehakioppnbnkcllakopjnmlkaabj" target="_blank">Peek</a></dd>
+                </dl>
+            </div>
         </div>
-        <div class="content-container round-me">
-            <div class="row">
-                <div class="col-sm-4 round-me">
-                    <img class="round-me" style="max-width: 100%; max-height:100%" src="images/peekProject/icon.png" />
-                </div>
-                <div class="col-sm-8">
-                    <h3 class="pad-me">Peek</h3>
-                    <dl class="dl-horizontal">
-                        <dt class="removeXs">Description</dt>
-                        <dd class="removeXs">Peek is a chrome extension that allows the user to preview all the tabs of the current 
-                            window in three different nicely formatted views making it both quicker and more 
-                            convenient to navigate tabs.</dd>
-                        <dt>Tools used</dt>
-                        <dd>JavaScript, Chrome Tabs API, HTML, CSS</dd>
-                        <dt class="removeXs">Link</dt>
-                        <dd class="removeXs"><a href="https://chrome.google.com/webstore/detail/peek/icebehakioppnbnkcllakopjnmlkaabj" target="_blank">Peek</a></dd>
-                    </dl>
-                </div>
-            </div>
-            <div class="row video-container">
-                <video width="800" height="670" controls>
-                    <source src="images/playlistantProject/peekPreview2.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+        <div class="row video-container">
+            <video controls>
+                <source src="images/peekProject/peekPreview2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
     </div>
 </body>
 </html>
 
+<!--
+    <img class="round-me" style="max-width: 100%; max-height:100%" src="images/peekProject/icon.png" />
+    <source src="images/playlistantProject/peekPreview2.mp4" type="video/mp4">
 
-            <!--<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-            </ul>-->   
+    <h3 class="pad-me">Peek</h3>
+    <dl class="dl-horizontal">
+        <dt class="removeXs">Description</dt>
+        <dd class="removeXs">Peek is a chrome extension that allows the user to preview all the tabs of the current 
+            window in three different nicely formatted views making it both quicker and more 
+            convenient to navigate tabs.</dd>
+        <dt>Tools used</dt>
+        <dd>JavaScript, Chrome Tabs API, HTML, CSS</dd>
+        <dt class="removeXs">Link</dt>
+        <dd class="removeXs"><a href="https://chrome.google.com/webstore/detail/peek/icebehakioppnbnkcllakopjnmlkaabj" target="_blank">Peek</a></dd>
+    </dl>
+-->

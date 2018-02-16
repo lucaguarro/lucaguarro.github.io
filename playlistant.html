@@ -7,45 +7,64 @@
     <link rel="stylesheet" href="./assets/bootstrap.min.css">
     <link rel = "stylesheet" type = "text/css" href = "./css/mediaQsProjectPage.css" />
     <link rel = "stylesheet" type = "text/css" href = "./css/scss/projectPage.css" />
+    <!--<link rel = "stylesheet" type = "text/css" href = "./assets/font-awesome-4.7.0/css/font-awesome.min.css" />-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <div class="container-fluid no-marg">
-        <div class="navbar-header no-marg">
-            <a class="navbar-brand no-vert-margin no-marg" href="./index.html">
-                <img class="round-me" style="max-width: 100px; max-height:100px" alt="Brand" src="./images/smplelogo.png">
-            </a>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 offset-sm-1 round-me">
+                <img class="round-me" style="max-width: 100%; max-height:100%" src="images/playlistantProject/iconsquare.jpg" />
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h3 class="pad-me">Playlistant</h3>
+                    </div>
+                    <div class="go-back-button col-sm-3">
+                        <a href="./index.html">
+                            <p style="font-size:20px; line-height:90%; color:#1D2951"><i class="fas fa-long-arrow-alt-left fa-2x"></i> Home</p>
+                        </a>
+                    </div>
+                </div>
+                <dl class="dl-horizontal">
+                    <dt class="removeXs">Description</dt>
+                    <dd class="removeXs">Playlistant is a single-page web application that prompts the user to login to his/her Spotify account
+                                to then upload a txt file of a list of songs. The app will then parse this file to create a new playlist 
+                                with all of the songs already added to it.</dd>
+                    <dt>Tools used</dt>
+                    <dd>Angular 4, TypeScript/JavaScript, Spotify Web API, HTML, CSS</dd>
+                    <dt class="removeXs">Link</dt>
+                    <dd class="removeXs"><a href="https://github.com/lucaguarro/SpotifyPlaylistManager" alt="Playlistant" target="_blank">github</a></dd>
+                </dl>
+            </div>
         </div>
-        <div class="no-marg content-container round-me">
-            <div class="row">
-                <div class="col-sm-4 round-me">
-                    <img class="round-me" style="max-width: 100%; max-height:100%" src="images/playlistantProject/iconsquare.jpg" />
-                </div>
-                <div class="col-sm-8">
-                    <h3 class="pad-me">Playlistant</h3>
-                    <dl class="dl-horizontal">
-                        <dt class="removeXs">Description</dt>
-                        <dd class="removeXs">Playlistant is a single-page web application that prompts the user to login to his/her Spotify account
-                                    to then upload a txt file of a list of songs. The app will then parse this file to create a new playlist 
-                                    with all of the songs already added to it.</dd>
-                        <dt>Tools used</dt>
-                        <dd>Angular 4, TypeScript/JavaScript, Spotify Web API, HTML, CSS</dd>
-                        <dt class="removeXs">Link</dt>
-                        <dd class="removeXs"><a href="https://github.com/lucaguarro/SpotifyPlaylistManager" alt="Playlistant" target="_blank">github</a></dd>
-                    </dl>
-                </div>
-            </div>
-            <div class="row video-container">
-                <video width="800" height="670" controls>
-                    <source src="images/playlistantProject/playlistantPreview.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
+        <div class="row video-container">
+            <video controls>
+                <source src="images/playlistantProject/playlistantPreview.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
     </div>
 </body>
 </html>
 
+<!--
+    <h3 class="pad-me">Playlistant</h3>
+    <source src="images/playlistantProject/playlistantPreview.mp4" type="video/mp4">
+    <img class="round-me" style="max-width: 100%; max-height:100%" src="images/playlistantProject/iconsquare.jpg" />
+    <dl class="dl-horizontal">
+        <dt class="removeXs">Description</dt>
+        <dd class="removeXs">Playlistant is a single-page web application that prompts the user to login to his/her Spotify account
+                    to then upload a txt file of a list of songs. The app will then parse this file to create a new playlist 
+                    with all of the songs already added to it.</dd>
+        <dt>Tools used</dt>
+        <dd>Angular 4, TypeScript/JavaScript, Spotify Web API, HTML, CSS</dd>
+        <dt class="removeXs">Link</dt>
+        <dd class="removeXs"><a href="https://github.com/lucaguarro/SpotifyPlaylistManager" alt="Playlistant" target="_blank">github</a></dd>
+    </dl>
+-->
 
             <!--<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
