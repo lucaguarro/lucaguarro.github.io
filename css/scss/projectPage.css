@@ -48,6 +48,11 @@ body {
   margin-bottom: 30px;
 }
 
+.go-back-button {
+  position: absolute;
+  right: 0;
+}
+
 .gobackbutton {
   line-height: 12px;
   width: 18px;

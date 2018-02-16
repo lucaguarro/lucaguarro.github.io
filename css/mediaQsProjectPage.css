@@ -1,3 +1,9 @@
+@media only screen and (max-width: 575px){
+    .go-back-button{
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 992px){
     .navbar-header{
         display: none;
