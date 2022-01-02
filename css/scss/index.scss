@@ -30,7 +30,7 @@
     ------------------------
 */
 //Colors
-$main: rgba(22,160,133,0.8);//#16a085;
+$main: rgba(36, 104, 167, 0.8);//#16a085;
 $main-dark: rgba(16,115,96, 0.8); //rgb(16,115,96) //#107360
 $secondary: #a01631;
 $comptCol2: #1676a0;
@@ -209,41 +209,45 @@ header {
     text-align: center;
 
     h1 {
-        color: #a01631;
-        font-weight: 900;
+        color: #f1f5fd;
+        font-weight: 600;
         font-size: 5vw;
         text-transform: uppercase;
         letter-spacing: 0.05em;
-        line-height: 0.5em
+        line-height: 1em
     }
 
     h2 {
-        color: #fff;
+        color: rgb(158, 188, 255);
         font-weight: 500;
         font-size: 2.25vw;
-        margin-bottom: 15px;       
+        margin-bottom: 0.7em;    
+        line-height: 1em;   
     }
 }
 
 #lead-down {
+    display: flex;
+    flex-direction: row;
     position: absolute;
     z-index:10;
     bottom: 2%;
-    text-align: center;
+    // text-align: center;
+    justify-content: space-evenly;
     width: 100%;
-    height: 5%;
-    font-size: 20px;
+    // height: 5%;
+    // font-size: 20px;
 
-    span{
-        cursor: pointer;
-        display: block;
-        margin: 0 auto;
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
-        border: 3px solid #a0cfee;
-        text-align: center;
-    }
+    // span{
+    //     cursor: pointer;
+    //     display: block;
+    //     margin: 0 auto;
+    //     width: 35px;
+    //     height: 35px;
+    //     border-radius: 50%;
+    //     border: 3px solid #a0cfee;
+    //     text-align: center;
+    // }
 }
 
 #lead-overlay{

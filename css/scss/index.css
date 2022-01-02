@@ -48,12 +48,25 @@ body.active {
   z-index: -1;
 }
 
-@keyframes dropHeader {
+@-webkit-keyframes dropHeader {
   0% {
-    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes dropHeader {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -64,10 +77,14 @@ header {
   right: 0;
   text-align: center;
   z-index: 10;
-  animation-name: dropHeader;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
-  animation-duration: 0.75s;
+  -webkit-animation-name: dropHeader;
+          animation-name: dropHeader;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
 }
 
 header ul {
@@ -116,11 +133,13 @@ header.sticky {
 }
 
 .shadow {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .shadow-large {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
 .heading {
@@ -154,6 +173,7 @@ header.sticky {
   padding: 15px 25px;
   border: 3px solid #fff;
   border-radius: 30px;
+  -webkit-transition: 0.5s ease all;
   transition: 0.5s ease all;
 }
 
@@ -183,44 +203,41 @@ header.sticky {
 }
 
 #lead-content h1 {
-  color: #a01631;
-  font-weight: 900;
+  color: #f1f5fd;
+  font-weight: 600;
   font-size: 5vw;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  line-height: 0.5em;
+  line-height: 1em;
 }
 
 #lead-content h2 {
-  color: #fff;
+  color: #9ebcff;
   font-weight: 500;
   font-size: 2.25vw;
-  margin-bottom: 15px;
+  margin-bottom: 0.7em;
+  line-height: 1em;
 }
 
 #lead-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   position: absolute;
   z-index: 10;
   bottom: 2%;
-  text-align: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 100%;
-  height: 5%;
-  font-size: 20px;
-}
-
-#lead-down span {
-  cursor: pointer;
-  display: block;
-  margin: 0 auto;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  border: 3px solid #a0cfee;
-  text-align: center;
 }
 
 #lead-overlay {
-  background: rgba(22, 160, 133, 0.8);
+  background: rgba(36, 104, 167, 0.8);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -284,7 +301,7 @@ header.sticky {
 }
 
 #menu-list li:hover {
-  background: rgba(22, 160, 133, 0.8);
+  background: rgba(36, 104, 167, 0.8);
 }
 
 #menu-list li:nth-child(2n+1) {
@@ -393,6 +410,7 @@ header.sticky {
   width: 3px;
   height: 40px;
   background: #3498db;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3498db), to(rgba(52, 152, 219, 0)));
   background: linear-gradient(to bottom, #3498db, rgba(52, 152, 219, 0));
   top: 100%;
   left: 303px;
@@ -548,13 +566,11 @@ header.sticky {
 
 .project-image img {
   max-width: 100%;
-  -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .project-image:hover img {
-  -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
@@ -562,7 +578,8 @@ header.sticky {
 .project-info {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   margin-left: 300px;
   padding: 15px;
 }
