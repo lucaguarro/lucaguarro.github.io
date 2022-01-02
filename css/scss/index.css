@@ -219,7 +219,33 @@ header.sticky {
   line-height: 1em;
 }
 
-#lead-down {
+.lead-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.lead-down a {
+  color: #9ebcff;
+}
+
+.chevron-center {
+  margin: 0 auto;
+}
+
+.chevron-center a {
+  color: #f1f5fd;
+}
+
+#bottom-navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,9 +256,6 @@ header.sticky {
   position: absolute;
   z-index: 10;
   bottom: 2%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   width: 100%;
 }
 

@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./assets/bootstrap.min.css">
     <link rel = "stylesheet" type = "text/css" href = "./assets/font-awesome-4.7.0/css/font-awesome.min.css" />
     <script type='text/javascript' src='./assets/jquery-3.2.1.min.js'></script>
-    <script src="js/visuals.js"></script>
 </head>
 <body>
     <div id="lead">
@@ -36,17 +35,24 @@
             <h2 style="margin-top: 20px">Data Scientist / Developer</h2>
             <a href="./images/gbgResume.pdf" download class="btn-rounded-white">Download Resume</a>
         </div>
-        <div id="lead-down" style="border: 2px red solid">
-            <a href="#about" style="color: inherit;" onclick="closeNav()">About</a>
-            <a href="#experience" style="color: inherit;" onclick="closeNav()">Experience</a>
-            <a href="#education" style="color: inherit;" onclick="closeNav()">Education</a>
-            <a href="#about" style="color: inherit;">
-                <i style="padding-top: 7px;" class="fa fa-chevron-down" aria-hidden="true" ></i>
-            </a>
-            <a href="#projects" style="color: inherit;" onclick="closeNav()">Projects</a>
-            <a href="#skills" style="color: inherit;" onclick="closeNav()">Skills</a>
-            <a href="#contact" style="color: inherit;" onclick="closeNav()">Contact</a>
+        <div id="bottom-navbar">
+            <div class="lead-down">
+                <a href="#about" onclick="closeNav()">About</a>
+                <a href="#experience" onclick="closeNav()">Experience</a>
+                <a href="#education" onclick="closeNav()">Education</a>
+            </div>
+            <div class="chevron-center">
+                <a href="#about">
+                    <i style="padding-top: 7px;" class="fa fa-chevron-down" aria-hidden="true" ></i>
+                </a>
+            </div>
+            <div class="lead-down">
+                <a href="#projects" onclick="closeNav()">Projects</a>
+                <a href="#skills" onclick="closeNav()">Skills</a>
+                <a href="#contact" onclick="closeNav()">Contact</a>
+            </div>
         </div>
+
         <div id="lead-overlay"></div>
     </div>
     <!-- End #lead -->
@@ -205,5 +211,5 @@
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
-
+<script src="js/visuals.js"></script>
 </html>
