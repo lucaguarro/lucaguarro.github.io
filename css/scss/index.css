@@ -239,12 +239,20 @@ header.sticky {
   color: #9ebcff;
 }
 
+.lead-down a:hover {
+  color: #f1f5fd;
+}
+
 .chevron-center {
   margin: 0 auto;
 }
 
 .chevron-center a {
   color: #f1f5fd;
+}
+
+.chevron-center a:hover {
+  color: #9ebcff;
 }
 
 #bottom-navbar {

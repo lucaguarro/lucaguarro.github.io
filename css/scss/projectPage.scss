@@ -57,14 +57,27 @@ body {
    position: absolute;
    right: 0;
    
+   a {
+       display: flex;
+       align-items: center;
+       color:#1D2951;
+   }
+
+   span {
+        margin-left: 0.5em;
+        font-size:20px;
+        color:#1D2951;
+        // border: red 2px solid;
+    }
+
 }
 
 
-.gobackbutton {
-     line-height: 12px;
-     width: 18px;
-     font-family: tahoma;
-     position:absolute;
-     top:30px;
-     right:40px;
- }
+// .gobackbutton {
+//      line-height: 12px;
+//      width: 18px;
+//      font-family: tahoma;
+//      position:absolute;
+//      top:30px;
+//      right:40px;
+//  }

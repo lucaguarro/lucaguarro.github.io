@@ -21,9 +21,9 @@
         </div>
         <div id="bottom-navbar">
             <div class="lead-down">
-                <a href="#about" onclick="closeNav()">About</a>
-                <a href="#experience" onclick="closeNav()">Experience</a>
-                <a href="#education" onclick="closeNav()">Education</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
             </div>
             <div class="chevron-center">
                 <a href="#about">
@@ -31,9 +31,9 @@
                 </a>
             </div>
             <div class="lead-down">
-                <a href="#projects" onclick="closeNav()">Projects</a>
-                <a href="#skills" onclick="closeNav()">Skills</a>
-                <a href="#contact" onclick="closeNav()">Contact</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
 
@@ -48,10 +48,11 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        	I am a software engineer from Los Angeles, California. I graduated with a degree in Physics from UC Santa Barbara where I formed my basis in computer science.
-                            After graduation, I took the iniatiative of further developing my software skills by taking various online courses, attending workshops, and creating projects for hackathons.
-                            For the past year I have been developing software for engineering applications for a small R&D company that operates under NASA contracts.
-	                        Aside from developing software, I enjoy playing the piano, reading, rock climbing, and cracking open a cold one with the boys.
+                        I am a software developer turned data scientist from Los Angeles, California. Coming from a technical background in physics, I developed a strong passion for developing software. After obtaining my Bachelor's I worked as a software analyst in the aerospace industry at a small R&D company for a couple years. In my free time, I sought to further progress my skills via online courses, attending workshops, and creating projects for hackathons. Ultimately my practical experience motivated me to pursue a Master's degree where I could learn difficult concepts to build more sophisticated softwares. In December 2021, I defended my Master's thesis and graduated from the Politecnico di Milano. During my graduate studies, I developed a strong interest in data science and would continue to take several courses in the field, as well as, completing my Master's thesis in the field of Natural Language Processing.
+                    </p>
+                    <br>
+                    <p>
+                        Apart from developing software, I take a keen interest in studying italian culture/language, playing the piano, and surfing.
                     </p>
                 </div>
             </div>
@@ -99,6 +100,26 @@
     <!-- End #experience -->
     <div id="education">
         <h2 class="heading">Education</h2>
+
+        <div class="education-block">
+            <h3>Politecnico di Milano</h3>
+            <span class="education-date">September 2018 - December 2021</span>
+            <h4>Computer Science and Engineering</h4>
+            <ul>
+                I received my degree from Italy's most prestigious technical university with a final grade of 105/110. During this time, I took 20 computer science and math courses with a focus in data science, and completed a thesis in natural language processing. Living in Italy, I also had the benefit of connecting with family and learning Italian proficiently.
+                <!-- will count towards the prerequisites needed to pursue Computer Science for my Masters. -->
+            </ul>
+        </div>
+
+        <div class="education-block">
+            <h3>CSU, Long Beach</h3>
+            <span class="education-date">September 2017 - May 2018</span>
+            <h4>Computer Science</h4>
+            <ul>
+                Took courses in OOP, circuit design, software engineering, databases, operating systems, and algorithms. These courses provided the theoretical foundation that prepared me for my Master's.
+            </ul>
+        </div>
+
         <div class="education-block">
             <h3>University of California, Santa Barbara</h3>
             <span class="education-date">Sept 2016 - Sept 2017</span>
@@ -108,21 +129,41 @@
             </p>
         </div>
         <!-- End .education-block -->
-
-        <div class="education-block">
-            <h3>CSU, Long Beach</h3>
-            <span class="education-date">September 2017 - May 2018</span>
-            <h4>Computer Science</h4>
-            <ul>
-                Took/am taking courses in OOP, circuit design, software engineering, databases, operating systems, and algorithms. These courses will count towards the prerequisites needed to pursue Computer Science for my Masters.
-            </ul>
-        </div>
-        <!-- End .education-block -->
     </div>
     <!-- End #education -->
     <div id="projects" class="background-alt">
         <h2 class="heading">Projects</h2>
         <div class="container">
+            <div class="row">       
+                <div class="project shadow-large">
+                    <a href="./thesis.html">
+                    <div class="project-image">
+                        <img src="images/thesisProject/iconsmall.jpg" />
+                    </div>
+                    </a>
+                </div>
+                <!-- End .project -->  
+                <div class="project shadow-large">
+                    <!--<a href="#">-->
+                    <a target="_blank" rel="noopener noreferrer" href="https://volenteer.herokuapp.com/">
+                    <div class="project-image">
+                        <img src="images/volenteerProject/blacklogo_cropped.jpeg" />
+                    </div>
+                    </a>
+                    <!--</a>-->
+                </div>    
+                <div class="project shadow-large">
+                    <!--<a href="#">-->
+                    <a target="_blank" rel="noopener noreferrer" href="https://solar-system-3d.herokuapp.com">
+                    <div class="project-image">
+                        <img src="images/3DSolarSystemProject/logo_resized.jpg" />
+                    </div>
+                    </a>
+                    <!--</a>-->
+                </div>       
+                <!-- End .project -->           
+            </div>
+            
             <div class="row">         
                 <div class="project shadow-large">
                     <!--<a href="#">-->
@@ -159,24 +200,21 @@
     <div id="skills">
         <h2 class="heading">Skills</h2>
         <ul>
+            <li>Python</li>
             <li>C++</li>
             <li>JavaScript</li>
             <li>VBA</li>
-            <li>Python</li>
-            <li>Mathematica</li>
-            <li>PHP</li>
-            <li>JQuery</li>
-            <li>Node.js</li>
-            <li>Angular 4</li>
-            <li>NoSQL</li>
             <li>SQL</li>
+            <li>Pytorch</li>
+            <li>Raytune</li>
+            <li>Node.js</li>
             <li>HTML5</li>
             <li>CSS3</li>
             <li>Git</li>
         </ul>
     </div>
     <!-- End #skills -->
-    <div id="contact">
+    <div id="contact" class="background-alt">
         <h2 class="heading">Contact</h2>
         <div class="cont">
             <ul class="contact">

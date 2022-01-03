@@ -53,12 +53,19 @@ body {
   right: 0;
 }
 
-.gobackbutton {
-  line-height: 12px;
-  width: 18px;
-  font-family: tahoma;
-  position: absolute;
-  top: 30px;
-  right: 40px;
+.go-back-button a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1D2951;
+}
+
+.go-back-button span {
+  margin-left: 0.5em;
+  font-size: 20px;
+  color: #1D2951;
 }
 /*# sourceMappingURL=projectPage.css.map */

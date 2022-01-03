@@ -43,7 +43,7 @@ $border: #dcd9d9;
 $heading: #374054;
 $text: #74808a;
 
-//Images
+//Images 
 $lead-image-source: url(../../images/lead-page.jpg);
 /*
     ---------------------
@@ -69,8 +69,7 @@ body {
         z-index: -1;
     }
 }
-
-
+  
 
 @keyframes dropHeader {
   0% {
@@ -239,6 +238,11 @@ header {
     a {
         color: rgb(158, 188, 255);
     }
+
+    a:hover {
+        // background: white;
+        color: #f1f5fd;
+    }
 }
 
 .chevron-center{
@@ -247,6 +251,11 @@ header {
     margin: 0 auto;
     a {
         color: #f1f5fd
+    }
+
+    a:hover {
+        // background: white;
+        color: rgb(158, 188, 255);
     }
 }
 
